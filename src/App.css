@@ -1,0 +1,23 @@
+body {
+    background-color: grey;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: grey;
+    color: white;
+}
+
+.input-group-text, .input-group-text:focus {
+    background-color: grey;
+    color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
