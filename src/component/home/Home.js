@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../banner-image.png';
+import pic from '../../images/banner-image.png';
 export default function Home() {
 
   return (document.title = "Employee Management System",

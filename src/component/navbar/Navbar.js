@@ -16,6 +16,9 @@ export default function Navbar(props) {
                     <li className="nav-item">
                     <NavLink className="nav-link" aria-current="page" to="/add">Add Employee</NavLink>
                     </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" aria-current="login" to="/login">Login</NavLink>
+                    </li>
                 </ul>
                 </div>
             </div>

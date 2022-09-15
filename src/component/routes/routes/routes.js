@@ -1,7 +1,8 @@
 import Alert from '../../../component/alert/Alert';
 import '../../../App.css';
 import React, { useState } from 'react';
-import Navbar from '../../../component/layout/Navbar';
+import Navbar from '../../navbar/Navbar';
+import Login from '../../login/Login';
 import AddEmployee from '../../../component/CRUD emp/AddEmployee';
 import DisplayEmployee from '../../../component/CRUD emp/DisplayEmployee';
 import {
@@ -10,7 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 import Cookies from 'universal-cookie';
-import Home from '../../../component/Home';
+import Home from '../../home/Home';
 import EditEmployee from '../../../component/CRUD emp/EditEmployee';
  
 const cookies = new Cookies();
@@ -67,6 +68,7 @@ function Path() {
     <Alert alert={alert} />
       <Routes>
         <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/login" element={<Login/>}/>
         <Route exact path="/add" element={<AddEmployee showAlert={showAlert} newEmployee={newEmployee}/>}/>
         <Route path="/display" element={<DisplayEmployee showAlert={showAlert} deleteEmployee={deleteEmployee} employees={employees} />}/>
         <Route path="/edit/:id" element={<EditEmployee employees={employees} showAlert={showAlert} setEmployee={setEmployee}/>} />
